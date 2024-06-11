@@ -131,6 +131,7 @@ async function submitUserMessage(content: string) {
   let textNode: undefined | React.ReactNode
 
   const result = await streamUI({
+    // @ts-ignore
     model: openai('gpt-3.5-turbo'),
     initial: <SpinnerMessage />,
     system: `\
