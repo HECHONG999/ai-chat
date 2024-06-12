@@ -37,7 +37,7 @@ import { Chat, Message } from '@/lib/types'
 import { auth } from '@/auth'
 
 const openai = createOpenAI({
-  baseURL: "https://gateway.ai.intrii.com",
+  baseURL: "https://gateway.ai.intrii.com/v1",
   apiKey: "sk-FTz8Xd4udt8gKuQmCe0f07E3848340E7A2A969D4F0A5Fc54"
 })
 async function confirmPurchase(symbol: string, price: number, amount: number) {
